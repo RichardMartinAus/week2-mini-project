@@ -13,63 +13,101 @@
     
     <!-- HEADER Text and description text -->
     <header>
-        <h1>CSS Snippets</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum dolores voluptates quidem beatae culpa pariatur eius tempore ipsa velit.</p>
+        <h1>CSS Snippets Cheatsheet</h1>
+        <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
 
     <!-- Card section -->
     <section>
         <!-- Card 1 -->
         <article>
-            <h2>Dummy card 1 header</h2>
+            <h2>Flexbox Row</h2>
             <section class=cardbody>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem aut hic.</p>
-                <pre>This is some <br>code text...<br>to go inside<br>the box inside<br>the box</pre>
+                <p>Use these three properties to create a Flexbox row layout.</p>
+                <pre>.row { 
+                    <br>    display: flex; 
+                    <br>    flex-direction:row; 
+                    <br>    flex-wrap:wrap 
+                    <br> } 
+                </pre>
             </section>
         </article>
 
         <!-- Card 2 -->
         <article>
-            <h2>Dummy card 2 header</h2>
+            <h2>Flexbox Column</h2>
             <section class=cardbody>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem aut hic.</p>
-                <pre>This is some <br>code text...<br>to go inside<br>the box inside<br>the box</pre>
+                <p>Use this to create a Flexbox column layout</p>
+                <pre>.column { 
+                    <br>     display: flex; 
+                    <br>     flex-direction: column; 
+                    <br> } 
+                </pre>
             </section>
         </article>
 
         <!-- Card 3 -->
         <article>
-            <h2>Dummy card 3 header</h2>
+            <h2>CSS Grid Layout</h2>
             <section class=cardbody>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem aut hic.</p>
-                <pre>This is some <br>code text...<br>to go inside<br>the box inside<br>the box</pre>
+                <p>Build a 12-column layout using CSS Grid</p>
+                <pre>.grid { 
+                    <br>    display: grid; 
+                    <br>    width: 100%;
+                    <br>    grid-template-columns:
+                    <br>repeat{12, 1fr}: 
+                    <br> } 
+                </pre>
             </section>
         </article>
 
         <!-- Card 4 -->
         <article>
-            <h2>Dummy card 4 header</h2>
+            <h2>Linear Gradients</h2>
             <section class=cardbody>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem aut hic.</p>
-                <pre>This is some <br>code text...<br>to go inside<br>the box inside<br>the box</pre>
+                <p>This will create a background linear gradient from top to bottom.</p>
+                <pre>.linear-gradient-background {
+                    <br>  background-image: linear-
+                    <br>gradient(
+                    <br>        rgba(232, 102, 236, 0) 0%,
+                    <br>        rgba(232, 102, 236, 0) 100%,
+                    <br>  );
+                    <br>}
+                </pre>
             </section>
         </article>
 
         <!-- Card 5 -->
         <article>
-            <h2>Dummy card 5 header</h2>
+            <h2>Box Transition Glow</h2>
             <section class=cardbody>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem aut hic.</p>
-                <pre>This is some <br>code text...<br>to go inside<br>the box inside<br>the box</pre>
+                <p>Use transition and box shadows to glow on hover.</p>
+                <pre>.code-card .code-header {
+                    <br>  border-radius:8px;
+                    <br>  transition: all 0.5s ease-in-
+                    <br>out;
+                    <br>}
+                    <br>
+                    <br>.code-card:hover,
+                    <br>.code-card:hover .card-header {
+                    <br>  box-shadow: inset 0px 0px 8px
+                    <br> rgba(232, 102, 236, 1), 0 0 15px
+                    <br> rgba(232, 102, 236, 1);
+                    <br>}
+                </pre>
             </section>
         </article>
 
         <!-- Card 6 -->
         <article>
-            <h2>Dummy card 6 header</h2>
+            <h2>Overlay Card with Title</h2>
             <section class=cardbody>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem aut hic.</p>
-                <pre>This is some <br>code text...<br>to go inside<br>the box inside<br>the box</pre>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                <pre>.card-reader { 
+                    <br>    position: relative;
+                    <br>    margin-top: -20px; 
+                    <br>}
+                </pre>
             </section>
         </article>
 
